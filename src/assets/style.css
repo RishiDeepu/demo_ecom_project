@@ -6,5 +6,29 @@
 }
 .lgBtn{
     text-transform: unset !important;
-    width: 100px;
+    width: 120px;
+    height: 100px;
+    margin-top: 2px;
+    
+}
+.becomeASeller{
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 16px;
+    color: white;   
+}
+.moreDiv{
+    /* background-color: green; */
+    width: 90px;
+}
+.more{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: white;
+}
+.cartDiv{
+    margin-left: 10px;
+    /* background-color: green; */
+    width: 90px;
 }

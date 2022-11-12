@@ -4,51 +4,48 @@
       <v-img alt="logo" src="../assets/fk.png" width="160px" height="80px" />
     </div>
     <v-col cols="12" sm="6" md="3">
-      <v-text-field 
-      dense label="Search For Products and Brand" 
-      placeholder="Search Products,Brands and more" 
-      solo
-      copyIcon="mdi-content-copy"
-      class="mt-7 inputTa"></v-text-field>
+      <v-text-field dense label="Search For Products and Brand" placeholder="Search Products,Brands and more" solo
+        copyIcon="mdi-content-copy" class="mt-7 inputTa"></v-text-field>
     </v-col>
     <v-btn class="blue--text lgBtn">Login</v-btn>
+    <p class="becomeASeller">Become a Seller</p>
+    <div class="moreDiv" @click="dialog = true">
+      <v-row>
+        <p class="more ml-10">More</p>
+        <v-icon small color="white" class="mt-1 ml-1">mdi-chevron-down</v-icon>
+      </v-row>
+    </div>
+    <div class="cartDiv">
+      <v-row>
+        <v-icon small color="white" class="mt-1 ml-6">mdi-cart</v-icon>
+        <p class="more ml-2">Cart</p>
+      </v-row>
+
+    </div>
+
+    <!-- popup section  -->
+    <v-dialog v-model="dialog" max-width="290">
+      <v-card>
+        <v-card-title class="text-h5">
+          comming soon
+        </v-card-title>
+
+        <v-card-text>
+          .......in progress........
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+
+          <v-btn color="green darken-1" text @click="dialog = false">
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+
+    </v-dialog>
+
   </v-app-bar>
-  <!-- <v-app-bar
-        app
-        color="primary"
-        dark
-      >
-        <div class="d-flex align-center">
-          <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-2"
-            contain
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-            transition="scale-transition"
-            width="40"
-          />
-  
-          <v-img
-            alt="Vuetify Name"
-            class="shrink mt-1 hidden-sm-and-down"
-            contain
-            min-width="100"
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-            width="100"
-          />
-        </div>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
-          text
-        >
-          <span class="mr-2">Latest Release</span>
-          <v-icon>mdi-open-in-new</v-icon>
-        </v-btn>
-      </v-app-bar> -->
 
 </template>
   
@@ -60,7 +57,22 @@ export default {
   },
 
   data: () => ({
-    //
+    dialog: false,
+    items: [
+      {
+        title: 'Click Me',
+      },
+      {
+        title: 'Click Me',
+      },
+      {
+        title: 'Click Me',
+      },
+      {
+        title: 'Click Me 2',
+      },
+    ],
+
   }),
 };
 </script>
