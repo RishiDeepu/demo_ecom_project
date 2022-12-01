@@ -1,18 +1,19 @@
 <template>
   <v-app>
-    <Appbar/>  
-  </v-app>
+    <Appbar/>
+    <Category/>
+   </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
 import Appbar from './components/Appbar.vue'
-
+import Category from './components/Categories.vue'
 export default {
   name: 'App',
 
   components: {
-    Appbar  
+    Appbar,
+    Category
   },
 
   data: () => ({

@@ -1,34 +1,91 @@
+/*..................AppBar section...............*/
+
 .logo {
     padding-left: 180px;
 }
-.inputTa{
+
+.inputTa {
     width: 300px;
 }
-.lgBtn{
+
+.lgBtn {
     text-transform: unset !important;
     width: 120px;
     height: 100px;
     margin-top: 2px;
-    
+
 }
-.becomeASeller{
+
+.becomeASeller {
     margin-top: 20px;
     margin-left: 60px;
     font-size: 16px;
-    color: white;   
+    color: white;
 }
-.moreDiv{
+
+.moreDiv {
     /* background-color: green; */
     width: 90px;
 }
-.more{
+
+.more {
     margin-top: 20px;
     margin-left: 30px;
     font-size: 16px;
     color: white;
 }
-.cartDiv{
+
+.cartDiv {
     margin-left: 10px;
     /* background-color: green; */
     width: 90px;
+}
+
+/*..................category section...............*/
+.categoryDiv {
+    /* background-color: yellow; */
+    width: 100vw;
+    height: 170px;
+    
+}
+.categoryItems:hover {
+    background-color: wheat;
+    transition: 0.2s;
+  }
+
+.categoryItems{
+    width: 10vw;
+    height: 100px;
+    /* background-color: aliceblue; */
+    margin-top: 80px;
+}
+.categoryImages{
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.categorytext{
+    font-size: small;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .....................carouseDiv.................... */
+.carouselDiv{
+    /* margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    width: 100vw;
+    height: 250px;
+    background-color: yellow;
+}
+/* .carouseDiv.carouselItem{
+    width: 100vw;
+    height: 250px;
+} */
+.carouselImg{
+    width: 1000px;
+    height: 300px;
 }
