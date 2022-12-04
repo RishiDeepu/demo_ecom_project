@@ -10,26 +10,25 @@
             </v-row>
         </div>
 
-        <v-carousel height="300px" hide-delimiters class="mt-5">
-            <v-carousel-item 
+        <v-carousel height="300px" hide-delimiters class="mt-5 ml-2 mr-2">
+            <v-carousel-item class="item"
              v-for="item in items" 
             :key="item._id"
             >
-            <!-- <div carouselDiv> -->
-                <v-img class="carouselImg" :src="item.src" max-height="300px" ></v-img>
-            <!-- </div> -->
-            
+            <div class="carouselDiv">
+                <v-img class="carouselImg" :src="item.src" max-height="300px" object-fit="cover" ></v-img>
+            </div>
             </v-carousel-item>
         </v-carousel>
 
-
-
-
+        <mainlist />
     </div>
+    
 
 </template>
 
 <script>
+import mainlist from '../components/MainList.vue'
 export default {
     name: "CategoryComponent",
     data: () => ({
@@ -88,24 +87,27 @@ export default {
         items: [
           {
             _id: "1",
-            src: 'https://soliloquywp.com/wp-content/uploads/2019/02/nb_pss_2.jpg',
+            src: 'https://techstory.in/wp-content/uploads/2021/09/Flipkart-Big-Billion-Days-2021.jpg',
           },
           {
             _id: "2",
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: 'https://d16pnh712pyiwa.cloudfront.net/wp-content/uploads/2020/11/Landing-page-banner-scaled.jpg',
           },
           {
             _id: "3",
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src: 'https://i.pinimg.com/originals/a4/6b/4e/a46b4ef475e27837660cca8cadf48d2e.jpg',
           },
           {
             _id: "4",
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src: 'https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202101/flipkart_sale_banner.jpg',
           },
         ],
 
 
     }),
+    components:{
+        mainlist
+    },
     methods: {
         a() {
             console.log("aaaaaaaaaaaaaaaaa");
